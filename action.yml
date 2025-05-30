@@ -10,7 +10,7 @@ inputs:
     description: 'Kernel Source Url'
     required: true
   depth:
-    required: false
+    required: true
     default: 1
   vendor:
     required: false
@@ -26,7 +26,7 @@ inputs:
     default: vendor
   kernel-branch:
     description: 'Branch name for kernel source'
-    required: false
+    required: true
   vendor-branch:
     description: 'Branch name for vendor kernel source'
     required: false
@@ -66,15 +66,15 @@ inputs:
     default: false
   lxc:
     description: 'Enable lxc and docker configs for configs.'
-    required: false
+    required: true
     default: false
   lxc-patch:
     description: 'Apply lxc patch aviod not booting'
-    required: false
+    required: true
     default: false
   nethunter:
     description: 'Enable Kali nethunter'
-    required: false
+    required: true
     default: false
   nethunter-patch:
     description: 'patch config'
@@ -82,7 +82,7 @@ inputs:
     default: false
   kvm:
     description: 'Enable KVM for configs.'
-    required: false
+    required: true
     default: false
   ccache:
     description: 'Enable Ccache for compiling kernel'
@@ -90,7 +90,7 @@ inputs:
     default: false
   aosp-gcc:
     description: 'Use gcc from aosp project.'
-    required: false
+    required: true
     default: false
   other-gcc32-url:
     required: false
@@ -102,7 +102,7 @@ inputs:
     required: false
   aosp-clang:
     description: 'Use clang from aosp project.'
-    required: false
+    required: true
     default: false
   aosp-clang-version:
     required: false
@@ -114,7 +114,7 @@ inputs:
     default: main
   anykernel3:
     description: 'Package kernel use anykernel3.'
-    required: false
+    required: true
     default: false
   anykernel3-url:
     description: '3rdparty anykernrl3 url path'
