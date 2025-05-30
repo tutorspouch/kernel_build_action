@@ -39,7 +39,7 @@ inputs:
     default: arm64
   android-version:
     description: 'Android version.'
-    required: true
+    required: false
     default: "15"
   ksu:
     description: 'KernelSU function support'
