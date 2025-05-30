@@ -192,7 +192,7 @@ runs:
              echo "::group:: Downloading AOSP clang"
              if [ ${{ inputs.aosp-gcc }} = true ]; then
                  if [ ! -z ${{ inputs.android-version }} ]; then
-                     export AOSP_CLANG_URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master/clang-${{ inputs.aosp-clang-version }}.tar.gz"
+                     export AOSP_CLANG_URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android-s-v2-beta-3/clang-${{ inputs.aosp-clang-version }}.tar.gz"
                  else
                      export AOSP_CLANG_URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/mirror-goog-main-llvm-toolchain-source/clang-${{ inputs.aosp-clang-version }}.tar.gz"
                  fi
