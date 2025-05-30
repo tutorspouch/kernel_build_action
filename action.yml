@@ -39,7 +39,7 @@ inputs:
     default: arm64
   android-version:
     description: 'Android version.'
-    required: tru
+    required: true
     default: "15"
   ksu:
     description: 'KernelSU function support'
@@ -102,13 +102,13 @@ inputs:
     required: false
   aosp-clang:
     description: 'Use clang from aosp project.'
-    required: true
+    required: false
     default: false
   aosp-clang-version:
-    required: true
-    default: "r445002"
-  other-clang-url:
     required: false
+    default: "r445002"
+  other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz
+    required: true
   other-clang-branch:
     required: false
     default: main
