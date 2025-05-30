@@ -10,7 +10,7 @@ inputs:
     description: 'Kernel Source Url'
     required: true
   depth:
-    required: false
+    required: true
     default: 1
   vendor:
     required: false
@@ -39,7 +39,7 @@ inputs:
     default: arm64
   android-version:
     description: 'Android version.'
-    required: false
+    required: tru
     default: "15"
   ksu:
     description: 'KernelSU function support'
@@ -93,7 +93,7 @@ inputs:
     required: true
     default: false
   other-gcc32-url:
-    required: false
+    required: true
   other-gcc32-branch:
     required: false
   other-gcc64-url:
