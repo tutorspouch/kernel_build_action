@@ -106,7 +106,7 @@ inputs:
     default: false
   aosp-clang-version:
     required: false
-    default: "r445002"
+    default: "r547379"
   other-clang-url: https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz
     required: true
   other-clang-branch:
