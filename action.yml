@@ -102,7 +102,7 @@ inputs:
     required: false
   aosp-clang:
     description: 'Use clang from aosp project.'
-    required: false
+    required: true
     default: false
   aosp-clang-version:
     required: false
