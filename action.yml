@@ -105,7 +105,7 @@ inputs:
     required: true
     default: false
   aosp-clang-version:
-    required: false
+    required: true
     default: "r445002"
   other-clang-url:
     required: false
